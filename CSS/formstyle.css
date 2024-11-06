@@ -1,0 +1,27 @@
+table{
+    background-color: rgb(250, 226, 236);
+    width: 100%;
+    padding: 15px;
+}
+.petti{
+    width: 68%;
+    padding: 0.75%;
+}
+#h2{
+    font-family: Arial, Helvetica, sans-serif;
+    /* text-decoration: underline; */
+    font-size: 35px;
+    padding: 0.5%;
+    border-style: dashed;
+    color: rgb(40, 77, 78);
+    border-radius: 2px;
+    background-color: beige;
+}
+#button{
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    background:green;
+    border-radius: 2rem;
+    color: aliceblue;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+    <marquee behavior="" direction="" id="h2" onmouseover="stop()" onmouseout="start()">Student Registraion Form</marquee>
+    <table>
+        <form action="">
+            <tr>
+                <td>First Name : </td>
+                <td><input type="text" class="petti" id="fname" placeholder="Enter your first name"></td>
+            </tr>
+            <tr>
+                <td>Last Name : </td>
+                <td><input type="text" class="petti" placeholder="Enter your last name"></td>
+            </tr>
+            <tr>
+                <td>Email : </td>
+                <td><input type="email" class="petti" name="mailid" id="mailid" placeholder="it should contain @"></td>
+            </tr>
+            <tr>
+                <td>Mobile : </td>
+                <td><input type="text" class="petti" placeholder="only 10 digits are allowed"></td>
+            </tr>
+            <tr>
+                <td>Gender : </td>
+                <td><input type="radio" name="gender" id="male" value="male">Male<input type="radio" name="gender" id="female" value="female">Female</td>
+            </tr>
+            <tr>
+                <td>Date Of Birth : </td>
+                <td><input class="petti" type="date" name="dob" id="dob"></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea name="address" id="address" rows="10" cols="98" class="petti"></textarea></td>
+            </tr>
+            <tr>
+                <td>City : </td>
+                <td><input type="text" class="petti" name="city" id="city"></td>
+            </tr>
+            <tr>
+                <td>Area PIN : </td>
+                <td><input type="text" class="petti" name="apin" id="apin"></td>
+            </tr>
+            <tr>
+                <td>State : </td>
+                <td><input type="text" class="petti" name="state" id="state"></td>
+            </tr>
+            <tr>
+                <td>Qualification : </td>
+                <td><select name="quali" id="quali">
+                    <option value="qualifi">Select Qualification</option>
+                    <option value="10th">10th</option>
+                    <option value="12th">12th</option>
+                    <option value="UG">UG</option>
+                    <option value="PG">PG</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Specialization : </td>
+                <td><input type="checkbox" name="spec" id="cs">Computer Science <br><input type="checkbox" name="spec" id="it">Information Technology <br><input type="checkbox" name="spec" id="ai">Artificial Intelligence <br><input type="checkbox" name="spec" id="ca">Computer Architecture</td>
+            </tr>
+            <tr>
+                <td>Password : </td>
+                <td><input type="password" name="password" class="petti" id="password"></td>
+            </tr>
+            <tr>
+                <td>Confirm Password : </td>
+                <td><input type="password" name="password" class="petti" id="cpassword"></td>
+            </tr>
+            <tr><td colspan="2"><center><input type="button" id="button" value="submit" onclick="alertbox()"></center></td></tr>
+        </form>
+    </table>
+</body>
+<script>
+    function alertbox(){
+        var a=document.getElementById('fname').value;
+        
+        alert("hai "+a);
+    }
+
+
+</script>
+</html>
